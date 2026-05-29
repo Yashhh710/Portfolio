@@ -48,7 +48,7 @@ function CardsScreen({ isActive, onLaunch }) {
   const cardsData = [
     {
       title: 'Professional',
-      url: 'https://yash-portfolio-v5.netlify.app/',
+      url: 'https://my-portfolio-hub-ten.vercel.app',
       img: 'https://github.com/Yashhh710/My-Portfolio-Hub/blob/main/img/1.png?raw=true',
       num: 'PORT_01 / PRO',
       desc: 'Clean, corporate-grade portfolio built for job applications and serious first impressions.',
@@ -93,7 +93,7 @@ function CardsScreen({ isActive, onLaunch }) {
     },
     {
       title: 'Portfolio Hub',
-      url: 'https://yash-tambade.netlify.app',
+      url: 'https://my-portfolio-hub-ten.vercel.app/',
       img: 'https://github.com/Yashhh710/My-Portfolio-Hub/blob/main/img/7.png?raw=true',
       num: 'PORT_06 / MAIN',
       desc: 'The central command — a cinematic hub linking all universes in Yash\'s creative multiverse.',
