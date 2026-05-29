@@ -22,16 +22,16 @@ main -  https://yash-tambade-portfolio.netlify.app
 │   ├── github - https://github.com/Yashhh710/map-port-v1                           
 │   └── live - https://map-port-v1.vercel.app/                      
 │                      
-├── MacOS                        
-│   ├── github - https://github.com/Yashhh710/Mac                  
-│   └── live - https://mac-lyart.vercel.app/                      
+├── MacOS                                                   
+│   ├── github - https://github.com/Yashhh710/Mac                               
+│   └── live - https://mac-lyart.vercel.app/                                   
 │                                                                   
-├── Portfolio V1
-│   ├── github - https://github.com/Yashhh710/Portfolio_v1                   
-│   └── live - https://yashhh710.github.io/Portfolio_v1/                              
-│                           
-└── Portfolio Hub                       
-    ├── github - https://github.com/Yashhh710/My-Portfolio-Hub                    
+├── Portfolio V1                                  
+│   ├── github - https://github.com/Yashhh710/Portfolio_v1                          
+│   └── live - https://yashhh710.github.io/Portfolio_v1/                                     
+│                                     
+└── Portfolio Hub                                  
+    ├── github - https://github.com/Yashhh710/My-Portfolio-Hub                          
     └── live - https://yash-tambade.netlify.app/                       
                
 
