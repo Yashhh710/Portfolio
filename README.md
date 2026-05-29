@@ -58,12 +58,11 @@ main -  https://yash-tambade-portfolio.netlify.app/
 src/
 │
 ├── components/
-│   ├── Header/
-│   ├── Loader/
-│   ├── AmbientEffects/
-│   ├── PortfolioGrid/
-│   ├── PortfolioCard/
-│   └── Footer/
+│   ├── CardsScreen.jsx
+│   ├── IntermediateScreen.jsx
+│   ├── LoadingScreen.jsx
+│   ├── MissionScreen.jsx
+│   └── VideoScreen.jsx
 │
 ├── assets/
 │
