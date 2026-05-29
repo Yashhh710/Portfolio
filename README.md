@@ -6,7 +6,7 @@ A cinematic, modern portfolio experience built with React + JavaScript, designed
 
 ---
 
-## 🔗links 
+## links 
 
 main -  https://yash-tambade-portfolio.netlify.app/                        
 │                         
@@ -37,7 +37,7 @@ main -  https://yash-tambade-portfolio.netlify.app/
 
 ---
 
-## 🚀 Features
+## Features
 
 * **React + JavaScript Architecture**
 * **Modern Component-Based Structure**
@@ -72,7 +72,7 @@ src/
 └── index.css
 ```
 
-## ⚡ Tech Stack
+## Tech Stack
 
 * **React 18**
 * **JavaScript**
@@ -82,13 +82,13 @@ src/
   
 ---
 
-## 📄 License
+## License
 
 All Rights Reserved © Yash Tambade
 
 ---
 
-# 👤 Author
+# Author
 
 ## Yash Tambade
 
@@ -96,4 +96,4 @@ Creative Frontend Developer & Digital Designer
 
 ---
 
-Built with React, creativity, and late-night ideas ✨
+Built with React, creativity, and late-night ideas
