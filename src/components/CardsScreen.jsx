@@ -106,7 +106,7 @@ function CardsScreen({ isActive, onLaunch }) {
     <div id="s-cards" className={`screen ${isActive ? 'active' : ''}`} style={{ justifyContent: 'flex-start', overflowY: 'auto', padding: '0' }}>
       <div className="cards-header">
         <h2>SELECT YOUR DESTINATION</h2>
-        <p>// 6 PORTFOLIO'S FOUND — CLICK TO DEPLOY</p>
+        <p>// Portfolio generator ready. Pick one of the six templates for Yash</p>
       </div>
       <div className="cards-grid">
         {cardsData.map((card, index) => (
