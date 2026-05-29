@@ -48,7 +48,7 @@ function CardsScreen({ isActive, onLaunch }) {
   const cardsData = [
     {
       title: 'Professional',
-      url: 'https://my-portfolio-hub-ten.vercel.app',
+      url: 'https://yash-portfolio-professional.vercel.app/',
       img: 'https://github.com/Yashhh710/My-Portfolio-Hub/blob/main/img/1.png?raw=true',
       num: 'PORT_01 / PRO',
       desc: 'Clean, corporate-grade portfolio built for job applications and serious first impressions.',
