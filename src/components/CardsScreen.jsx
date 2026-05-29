@@ -106,7 +106,7 @@ function CardsScreen({ isActive, onLaunch }) {
     <div id="s-cards" className={`screen ${isActive ? 'active' : ''}`} style={{ justifyContent: 'flex-start', overflowY: 'auto', padding: '0' }}>
       <div className="cards-header">
         <h2>SELECT YOUR DESTINATION</h2>
-        <p>// 6 PORTFOLIOS FOUND — CLICK TO DEPLOY</p>
+        <p>// 6 Templets FOUND — CLICK TO DEPLOY</p>
       </div>
       <div className="cards-grid">
         {cardsData.map((card, index) => (
