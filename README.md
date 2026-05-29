@@ -8,14 +8,14 @@ A cinematic, modern portfolio experience built with React + JavaScript, designed
 
 ## links 
 
-main -  https://yash-tambade-portfolio.netlify.app/                        
-│                         
-├── Professional Portfolio                     
-│   ├── github - https://github.com/Yashhh710/yash.portfolio.professional-                
-│   └── live - https://yash-portfolio-v5.netlify.app/                
-│                         
+main -  https://yash-tambade-portfolio.netlify.app                                 
+│                                  
+├── Professional Portfolio                                 
+│   ├── github - https://github.com/Yashhh710/yash.portfolio.professional-                     
+│   └── live - https://yash-portfolio-v5.netlify.app/                     
+│                             
 ├── Dark Theme Portfolio                               
-│   ├── github - https://github.com/Yashhh710/Portfolio-v4                  
+│   ├── github - https://github.com/Yashhh710/Portfolio-v4                             
 │   └── live - https://portfolio-v4-three-mauve.vercel.app/               
 │                          
 ├── SkyLine Protocol                    
