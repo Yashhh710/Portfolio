@@ -22,7 +22,7 @@ function ScreenManager() {
 
   const handleAcceptMission = () => {
     setCurrentScreen('s-cards');
-    speak("Six portfolios detected. Select your destination.");
+    speak("Portfolio generator ready. Pick one of the six templates for Yash.");
   };
 
   const launchPortfolio = (name, url) => {
