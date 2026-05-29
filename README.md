@@ -1,10 +1,6 @@
 # My Portfolio 🙂
 
-live Demo - 
-
-https://yash-tambade-portfolio.netlify.app   
-< - - - - - - - - - or - - - - - - - - - >   
-https://yash-tambade.web.app
+live Demo - https://yashfolio-v1.vercel.app
 
 A cinematic, modern portfolio experience built with React + JavaScript, designed to showcase creative frontend development, immersive UI systems, and digital interaction design.
 
