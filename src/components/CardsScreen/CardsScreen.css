@@ -1,0 +1,203 @@
+/* ── CARDS ── */
+#s-cards {
+  background: var(--dark);
+  z-index: 90;
+  justify-content: flex-start;
+  overflow-y: auto;
+  padding: 0;
+}
+.cards-header {
+  width: 100%;
+  padding: 2.2rem 2rem 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to bottom, var(--dark) 75%, transparent);
+  z-index: 10;
+}
+.cards-header h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.8rem, 5vw, 3.2rem);
+  letter-spacing: 5px;
+  color: var(--white);
+}
+.cards-header p {
+  font-size: 10px;
+  color: var(--dim);
+  letter-spacing: 4px;
+  margin-top: 5px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 1px;
+  padding: 0.5rem 0 4rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.port-card {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.04);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: cardIn 0.55s ease forwards;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes cardIn { to { opacity: 1; transform: translateY(0); } }
+
+.port-card:hover { border-color: rgba(0,255,136,0.18); transform: translateY(-3px); box-shadow: 0 20px 60px rgba(0,0,0,0.6); }
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+  background: #0a0a0a;
+  flex-shrink: 0;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.6s ease, filter 0.4s ease;
+  filter: grayscale(40%) brightness(0.75);
+}
+.port-card:hover .card-img img {
+  transform: scale(1.06);
+  filter: grayscale(0%) brightness(0.9);
+}
+.card-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #111 25%, #1a1a1a 50%, #111 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  z-index: 1;
+}
+.card-img.img-loaded::before { opacity: 0; pointer-events: none; transition: opacity 0.3s; }
+@keyframes shimmer { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+
+.card-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, var(--card) 100%);
+  z-index: 2;
+}
+
+.card-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 9px;
+  letter-spacing: 2px;
+  padding: 4px 10px;
+  background: rgba(0,0,0,0.8);
+  border: 1px solid var(--gb);
+  color: var(--g);
+  z-index: 3;
+}
+
+.card-scan {
+  position: absolute;
+  top: -100%;
+  left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--g), transparent);
+  opacity: 0;
+  z-index: 4;
+  transition: none;
+}
+.port-card:hover .card-scan {
+  opacity: 0.7;
+  animation: scanDown 1.2s ease forwards;
+}
+@keyframes scanDown { 0%{top:-2px} 100%{top:100%} }
+
+.card-body {
+  padding: 1.4rem 1.6rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+
+.card-body::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, var(--g), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.45s ease;
+}
+.port-card:hover .card-body::after { transform: scaleX(1); }
+
+.card-num {
+  font-size: 9px;
+  color: var(--g);
+  letter-spacing: 3px;
+  margin-bottom: 0.6rem;
+  opacity: 0.7;
+}
+.card-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+  line-height: 1;
+}
+.card-desc {
+  font-size: 11px;
+  color: var(--dim);
+  line-height: 1.9;
+  margin-bottom: 1.2rem;
+  flex: 1;
+}
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 1.2rem;
+}
+.tag {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  padding: 3px 9px;
+  border: 1px solid rgba(0,255,136,0.18);
+  color: rgba(0,255,136,0.7);
+}
+.card-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  color: var(--g);
+  letter-spacing: 3px;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: all 0.3s;
+}
+.port-card:hover .card-action {
+  opacity: 1;
+  transform: translateX(0);
+}
+.card-action .arrow { animation: arrowPulse 0.9s ease infinite; display: inline-block; }
+@keyframes arrowPulse { 50% { transform: translateX(5px); } }
+
+@media (max-width: 640px) {
+  .cards-grid { grid-template-columns: 1fr; }
+  .card-img { height: 150px; }
+}

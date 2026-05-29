@@ -1,0 +1,75 @@
+/* ── DEPLOY LOADING ── */
+#s-loading {
+  background: #000;
+  z-index: 500;
+  text-align: center;
+  overflow: hidden;
+}
+
+.load-target {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
+  color: var(--g);
+  letter-spacing: 5px;
+  margin-bottom: 2.5rem;
+}
+
+.terminal-box {
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  border: 1px solid rgba(0,255,136,0.15);
+  border-top: 1px solid rgba(0,255,136,0.4);
+  padding: 1.4rem 1.6rem;
+  text-align: left;
+  margin-bottom: 1.8rem;
+  min-height: 160px;
+  max-height: 220px;
+  overflow-y: hidden;
+}
+.terminal-line {
+  font-size: 11px;
+  line-height: 2;
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.terminal-line.show { opacity: 1; }
+.terminal-line .prompt { color: #333; }
+.terminal-line .cmd { color: var(--white); }
+.terminal-line .res { color: var(--g); }
+.terminal-line .err { color: var(--red); }
+.terminal-line .ok  { color: #00ff88; }
+.terminal-line .dim { color: var(--dim); }
+
+.progress-track {
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.05);
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--g);
+  width: 0%;
+  transition: width 0.4s ease;
+  box-shadow: 0 0 8px var(--g);
+}
+.progress-glow {
+  position: absolute;
+  right: 100%; top: -2px;
+  width: 4px; height: 5px;
+  background: var(--g);
+  box-shadow: 0 0 12px 4px var(--g);
+  border-radius: 50%;
+  transition: right 0.4s ease;
+}
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--dim);
+  letter-spacing: 2px;
+}
+.progress-pct { color: var(--g); }
