@@ -8,7 +8,7 @@ A cinematic, modern portfolio experience built with React + JavaScript, designed
 
 ## links 
 
-main -  https://yash-tambade-portfolio.netlify.app                                 
+main -  https://yashfolio-v1.vercel.app                                
 │                                  
 ├── Professional Portfolio                                 
 │   ├── github - https://github.com/Yashhh710/yash.portfolio.professional-                     
