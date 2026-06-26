@@ -104,6 +104,35 @@ function CardsScreen({ isActive, onLaunch }) {
 
   return (
     <div id="s-cards" className={`screen ${isActive ? 'active' : ''}`} style={{ justifyContent: 'flex-start', overflowY: 'auto', padding: '0' }}>
+      <button 
+        onClick={() => window.open('https://myprojects-yash.vercel.app/', '_blank')}
+        style={{
+          position: 'fixed',
+          top: '20px',
+          left: '20px',
+          padding: '10px 20px',
+          backgroundColor: 'rgba(0, 255, 136, 0.1)',
+          border: '2px solid rgba(0, 255, 136, 0.5)',
+          color: '#00ff88',
+          fontFamily: "'Bebas Neue', sans-serif",
+          fontSize: '14px',
+          letterSpacing: '2px',
+          cursor: 'pointer',
+          zIndex: 1000,
+          transition: 'all 0.3s ease',
+          borderRadius: '2px'
+        }}
+        onMouseEnter={(e) => {
+          e.target.style.backgroundColor = 'rgba(0, 255, 136, 0.2)';
+          e.target.style.boxShadow = '0 0 10px rgba(0, 255, 136, 0.5)';
+        }}
+        onMouseLeave={(e) => {
+          e.target.style.backgroundColor = 'rgba(0, 255, 136, 0.1)';
+          e.target.style.boxShadow = 'none';
+        }}
+      >
+        → MY PROJECTS
+      </button>
       <div className="cards-header">
         <h2>SELECT YOUR DESTINATION</h2>
         <p>// Portfolio generator ready. Pick one of the six templates for Yash</p>
